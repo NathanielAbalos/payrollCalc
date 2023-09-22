@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("officeLaptop.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.calculatorBox{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.95);
+    gap: 25px;
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 420px;
+}
+.timeBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.payBox{
+    font-weight: bold;
+}
+span{
+    font-weight: 400;
+    text-align: center;
+}
+input{
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+.timeBox .timeColon{
+    margin: 0 5px;
+}
+.timeBox span{
+    font-size: 20px;
+    margin: 0 20px;
+}
+#clearButton{
+    border-radius: 10px;
+    height: 35px;
+    font-size: 16px;
+}

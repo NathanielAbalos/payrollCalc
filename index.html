@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payroll.css">
+    <title>Payroll Calculator</title>
+</head>
+<body>
+    <div class="calculatorBox">
+        <h2 class="header">Student Assistant Payroll Calculator</h2>
+        <div class="timeBox">
+            <div class="morning">
+                <h4>Morning Time (am)</h4>
+                <input type="text" class="morningStartHour" maxlength="2"><span class="timeColon">:</span>
+                <input type="text" class="morningStartMinute"  maxlength="2"><span>-</span>
+                <input type="text" class="morningEndHour"  maxlength="2"><span class="timeColon">:</span>
+                <input type="text" class="morningEndMinute"  maxlength="2">
+            </div>
+            <div class="afternoon">
+                <h4>Afternoon Time (pm)</h4>
+                <input type="text" class="afternoonStartHour" maxlength="2"><span class="timeColon">:</span>
+                <input type="text" class="afternoonStartMinute" maxlength="2"><span>-</span>
+                <input type="text" class="afternoonEndHour" maxlength="2"><span class="timeColon">:</span>
+                <input type="text" class="afternoonEndMinute" maxlength="2">
+            </div>
+        </div>
+        <button type="button" id="clearButton">Clear</button>
+        <div class="payBox">
+            <div class="totalMorningTime">Total Morning Hours:<span class="result"></span></div>
+            <div class="morningPay">Total Morning Pay:<span class="result"></span></div><br>
+            <div class="totalAfternoonTime">Total Afternoon Hours:<span class="result"></span></div>
+            <div class="afternoonPay">Total Afternoon Pay:<span class="result"></span></div><br>
+            <div class="totalTime">Total Hours:<span class="result"></span></div>
+            <div class="totalPay">Total Pay:<span class="result"></span></div>
+        </div>
+    </div>
+    <script src="payroll.js"></script>
+</body>
+</html>
