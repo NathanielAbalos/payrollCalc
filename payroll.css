@@ -137,4 +137,8 @@ button{
     grid-template-rows: repeat(8, auto);
     column-gap: 6px;
 }
-
+@media (max-width:420px){
+    .calculatorBox{
+        width: 100%;
+    }
+}
