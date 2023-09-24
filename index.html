@@ -4,39 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3841f3c238.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="calc.png">
     <link rel="stylesheet" href="payroll.css">
     <title>Payroll Calculator</title>
 </head>
 <body>
     <div class="calculatorBox">
-        <h2 class="header">Student Assistant Payroll Calculator</h2>
+        <h2 class="header">Payroll Calculator<div class="gearIcon"><i class="fa-solid fa-gear"></i></div></h2>
+        <div class="outerContentBox">
+        <div class="contentBox">
         <div class="timeBox">
             <div class="morning">
                 <h4>Morning Time (am)</h4>
                 <input type="text" class="morningStartHour" maxlength="2"><span class="timeColon">:</span>
-                <input type="text" class="morningStartMinute"  maxlength="2"><span>-</span>
+                <input type="text" class="morningStartMinute"  maxlength="2"><span>--</span>
                 <input type="text" class="morningEndHour"  maxlength="2"><span class="timeColon">:</span>
                 <input type="text" class="morningEndMinute"  maxlength="2">
             </div>
             <div class="afternoon">
                 <h4>Afternoon Time (pm)</h4>
                 <input type="text" class="afternoonStartHour" maxlength="2"><span class="timeColon">:</span>
-                <input type="text" class="afternoonStartMinute" maxlength="2"><span>-</span>
+                <input type="text" class="afternoonStartMinute" maxlength="2"><span>--</span>
                 <input type="text" class="afternoonEndHour" maxlength="2"><span class="timeColon">:</span>
                 <input type="text" class="afternoonEndMinute" maxlength="2">
             </div>
         </div>
-        <button type="button" id="clearButton">Clear</button>
+        <div class="buttons">
+            <button type="button" id="clearButton">Clear</button>
+            <button type="button" id="logButton">Log Entry</button>
+        </div>
         <div class="payBox">
             <div class="totalMorningTime">Total Morning Hours:<span class="result"></span></div>
-            <div class="morningPay">Total Morning Pay:<span class="result"></span></div><br>
+            <div style="display:none;" class="morningPay">Total Morning Pay:<span class="result"></span></div><br>
             <div class="totalAfternoonTime">Total Afternoon Hours:<span class="result"></span></div>
-            <div class="afternoonPay">Total Afternoon Pay:<span class="result"></span></div><br>
+            <div style="display:none;"class="afternoonPay">Total Afternoon Pay:<span class="result"></span></div><br>
             <div class="totalTime">Total Hours:<span class="result"></span></div>
             <div class="totalPay">Total Pay:<span class="result"></span></div>
         </div>
+        </div>
+        <div class="settingsBox">
+            <div><h4>Hourly Rate:</h4>  <input type="text" class="hourRateInput"></div>
+            <div><h4>Minute Rate:</h4>  <input type="text" class="minRateInput"></div>
+            <button type="button" class="saveButton">Save</button>
+        </div>
+        </div>
+    </div>
+    <div class="logBox">
+        <div class="logHeader">
+            <span></span><br><br>
+            <button type="button" class="clearLogButton">Clear Results</button>
+        </div>
+        <div class="logBoxContent"></div>
     </div>
     <script src="payroll.js"></script>
 </body>
