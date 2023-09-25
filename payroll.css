@@ -118,15 +118,13 @@ button{
     margin-top: 15px;
 }
 .logBox{
+    display: none;
     background: rgba(255,255,255,0.96);
     padding: 40px;
     border: 2px solid black;
     border-radius: 30px;
     width: 90%;
     max-width: 420px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 .logHeader{
     grid-column: 1/-1;
@@ -136,4 +134,5 @@ button{
     grid-template-columns: auto auto auto auto;
     grid-template-rows: repeat(8, auto);
     column-gap: 6px;
+    margin-top: 15px;
 }
