@@ -109,7 +109,7 @@ window.addEventListener("keyup",(event)=>{
     }
     else if(afternoonEndHour.value.length===afternoonEndHour.maxLength){
         afternoonEndMinute.focus();
-
+    }
     
     if(event.code==="ArrowDown"){
         afternoonStartHour.focus();
