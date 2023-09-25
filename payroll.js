@@ -109,11 +109,7 @@ window.addEventListener("keyup",(event)=>{
     }
     else if(afternoonEndHour.value.length===afternoonEndHour.maxLength){
         afternoonEndMinute.focus();
-    }
 
-    //if(afternoonEndMinute.value.length===afternoonStartMinute.maxLength){
-        //calculateMorningPay();
-    //}
     
     if(event.code==="ArrowDown"){
         afternoonStartHour.focus();
@@ -122,13 +118,6 @@ window.addEventListener("keyup",(event)=>{
         morningStartHour.focus();
     }
 });
-//morningEndHour.addEventListener("input",calculateMorningPay);
-//morningStartMinute.addEventListener("input",calculateMorningPay);
-//morningEndMinute.addEventListener("input",calculateMorningPay);
-//afternoonStartHour.addEventListener("input",calculateMorningPay);
-//afternoonEndHour.addEventListener("input",calculateMorningPay);
-//afternoonStartMinute.addEventListener("input",calculateMorningPay);
-//afternoonEndMinute.addEventListener("input",calculateMorningPay);
 
 morningEndMinute.addEventListener("input",()=>{
     if(morningEndMinute.value.length===morningEndMinute.maxLength){
@@ -189,7 +178,6 @@ logButton.addEventListener("click",()=>{
         logBox.style.display="grid";
     }
     
-    clearResults();
     console.log(`hours, minutes, pay each day: ${HoursMinutesPayEachDay}`);
 });
 
