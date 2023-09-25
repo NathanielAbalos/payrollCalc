@@ -54,7 +54,6 @@ window.onload = function(){
         payPerHour=localStorage.getItem("hourlyPay");
         payPerMin=localStorage.getItem("minutePay");
     }
-    logBox.style.display="none";
     hourRateInput.value=payPerHour;
     minuteRateInput.value=payPerMin;
     morningStartHour.focus();
